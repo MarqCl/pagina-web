@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cris Electrodomésticos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: block;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .sidebar-left {
+      width: 200px;
+      background: #007d8a;
+      color: white;
+      padding-top: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar-left a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .sidebar-left a:hover {
+      background: #00bcd4;
+    }
+
+    .sidebar-right {
+      width: 200px;
+      background: #eeeeee;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar-right h3 {
+      margin-top: 0;
+      color: #007d8a;
+    }
+
+    .main-content {
+      margin-left: 200px;
+      margin-right: 200px;
+      padding: 20px;
+    }
+
+    header {
+      background: #00bcd4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .introduccion, .introduccion2 {
+      background: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 20px;
+    }
+
+    	
+}
+
+
+	/* Este contenedor encierra todo el contenido, pero respetando el espacio de las barras */
+		.contenido-principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #f0f0f0;
+}
+
+/* Este es el cuadro que vos querés personalizar */
+.contenedor-productos {
+  width: 100%;
+  max-width: 800px;
+  /* height: 350px; /* ajustá a tu gusto */
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow-x: auto; /* ☝🏼 ESTO hace que vuelva la barra de desplazamiento */
+  white-space: nowrap; /* para que los productos no se bajen de línea */
+  box-sizing: border-box;
+  margin: 0 auto; /* centrado por si acaso, backup */
+}
+
+/* Tarjetas de productos */
+.producto {
+ display: inline-block;
+  width: 200px;
+  height: 300px;
+  background-color: #e0e0e0;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: top;
+  overflow: hidden; /* ☝️ Esto es clave */
+  box-sizing: border-box;;
+}
+
+}
+
+.producto img {
+
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+
+
+
+    
+
+    .producto h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .producto p {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <div class="sidebar-left">
+    <a href="#none" class="nav-link active"><img src="logo-search-grid-2x.png" alt="cris logo" width="146" height="122"></a>
+    <a href="prueba 500.html" class="nav-link active">Página 1 (inicio)</a>
+    <a href="pagina 2.html" class="nav-link">Página 2 (productos)</a>
+    <a href="pagina 3.html" class="nav-link" >Página 3(terminos)</a>  </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h3>Contacto</h3>
+    <p><strong>Correo:</strong><br> contacto@criselectro.com</p>
+    <p><strong>Celular:</strong><br> +505 8888-8888</p>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Cris Electrodomésticos</h1>
+    </header>
+
+    <div class="introduccion">
+      <h2>Bienvenidos a Cris Electrodomésticos</h2>
+      <p>Somos una empresa dedicada a la venta de electrodomésticos de alta calidad. Nos comprometemos con la satisfacción de nuestros clientes, ofreciendo productos modernos, duraderos y accesibles para todos los hogares peruanos.</p>
+    </div>
+	<div class="introduccion2">
+      <h2>sobre nosotros</h2>
+      <p>Cris es un emprendedor peruano con una visión clara: brindar soluciones prácticas y confiables a los hogares con los mejores electrodomésticos. Su historia comienza cuando, gracias a la plataforma Discord, conoce a Marcos Cano, un joven nicaragüense con talento para el diseño y desarrollo web. Su conexión fue inmediata, compartiendo ideas, proyectos y amistad a pesar de la distancia.</p>
+      <p>Tiempo después, Cris decidió viajar a Nicaragua durante dos semanas y media, donde finalmente conoció a Marcos en persona. La experiencia fue tan grata que, al regresar a Perú, Cris lo invitó a pasar un mes completo de vacaciones en su país.</p>
+      <p>Durante su tiempo juntos en Perú, ambos compartieron muchas experiencias, hasta que un día, mientras viajaban en motocicleta, sufrieron un accidente. La motocicleta se estrelló contra el escaparate de una tienda de electrodomésticos. Afortunadamente, no hubo consecuencias físicas mayores y Cris cubrió los daños del local.</p>
+      <p>Ese momento fue el comienzo de algo inesperado. Cris entabló amistad con el dueño de la tienda y decidió trabajar con él durante un mes. La experiencia lo inspiró profundamente, y fue entonces cuando el dueño lo motivó a emprender su propio negocio. Al finalizar su estancia, Marcos regresó a Nicaragua, mientras que Cris se quedó con un nuevo objetivo.</p>
+      <p>Cuatro meses después del accidente, Cris logró abrir su propia tienda, ofreciendo refrigeradores, estufas, lavadoras y cafeteras. Con esfuerzo constante, su catálogo creció, al igual que sus ventas. Fue entonces cuando recordó a su amigo Marcos y lo contactó de nuevo, esta vez para crear el sitio web que hoy representa la esencia de Cris Electrodomésticos.</p>
+      <p>Una empresa nacida de la amistad, la resiliencia y la determinación, enfocada en mejorar la vida en el hogar con tecnología accesible y confiable.</p>
+    </div>
+	
+<div class="contenido-principal">
+    <div class="contenedor-productos">
+      
+      
+      <div class="producto">
+        <img src="producto2.jpg" alt="Lavadora">
+        <h3>Lavadoras</h3>
+      </div>
+	  
+	  <div class="producto">
+        <img src="producto4.jpg" alt="Lavadora">
+        <h3>Lavadoras</h3>
+      </div>
+	  
+      <div class="producto">
+        <img src="producto3.jpg" alt="Cocina">
+        <h3>Cocinas</h3>
+      </div>
+	  
+	  <div class="producto">
+  <img src="producto1.jpg" alt="Lavadora">
+  <h3>Lavadoras</h3>
+</div>
+	  
+    </div>
+    </div>
+
+    
+
+    
+  </div>
+	
+	
+	<div class="introduccion2">
+      <h2 align="center">ve a la pestaña &quot;productos&quot; para revisar qué hay. </h2>
+	  
+	  <footer>
+      <p>&copy; 2025 Cris Electrodomésticos. Todos los derechos reservados.</p>
+    </footer>
+	
+	
+	
+</body>
+</html>
